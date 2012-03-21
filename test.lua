@@ -24,7 +24,7 @@ mesgt = {
   body = "I hope this works. If it does, I can send you another 1000 copies."
 }
 
-r, e = smtp.send{
+r, e = smtps.send{
   from = from,
   rcpt = rcpt, 
   source = smtp.message(mesgt),

@@ -8,4 +8,8 @@ The smtps module extends the socket.smtp module, so all documentation for the
 socket.smtp module apply here.  The default port is changed to 465, and the send
 function also accepts any of the paramaters that the ssl.wrap params accepts.
 
+test.lua shows an example usage of the smtps module.  moduleless.lua shows an
+example of how to do SMTPS without installing a module (useful for MiOS UPnP Lua
+where installing modules is not possible)
+
 To install, place smtps.lua wherever you need the module to be.
