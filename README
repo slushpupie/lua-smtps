@@ -1,1 +1,11 @@
-This is an implementation of SMTPS for Lua.  Depends on 'socket' and 'ssl' modules.
+This is an implementation of SMTPS for Lua. 
+It depends on LuaSocket and LuaSec to be useful. 
+
+Many thanks to Diego Nehab for providing the LuaSocket source for which to work
+from.
+
+The smtps module extends the socket.smtp module, so all documentation for the 
+socket.smtp module apply here.  The default port is changed to 465, and the send
+function also accepts any of the paramaters that the ssl.wrap params accepts.
+
+To install, place smtps.lua wherever you need the module to be.
